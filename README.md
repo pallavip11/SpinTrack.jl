@@ -9,6 +9,23 @@ import Pkg;
 Pkg.add(url="https://github.com/pallavip11/SpinTrack.jl")
 Pkg.add("Plots")
 ```
+To run Julia in tandem with Jupyter notebook, install `IJulia`:
+
+```
+using Pkg;
+Pkg.add("IJulia")
+```
+For your own Python/Jupyter installation, just run jupyter notebook yourself in a terminal. Another simple method to run the notebok is:
+
+```
+using IJulia
+notebook()
+```
+to launch the IJulia notebook in browser.
+
+ON the first time running the notebook(), there will be a prompt for whether to install Jupyter. Hit enter to have it use the Conda.jl package to install a minimal Python+Jupyter distribution (via Miniconda) that is private to Julia (not in your PATH).
+For more details refer to this [link](https://julialang.github.io/IJulia.jl/stable/manual/running/).
+
 # Running Cases
 
 ## Basic Case
