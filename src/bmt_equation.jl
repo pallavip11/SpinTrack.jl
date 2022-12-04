@@ -28,16 +28,6 @@ function bmt_equation(du, u, p, t; cw=true)
             Bfield = SA[Bx, By, Bs]
         end
 
-        # Rate of position
-        # Berz Introduction to Beam Physics
-        # u[1] x
-        # u[2] a = px/p0
-        # u[3] y
-        # u[4] b = py/p0
-        # u[5] l = k(t-t0)
-        # u[6] δ = (K-K0)/K0
-        # h = h(s) = dΘ(s)/ds  CURVATURE!
-
         let (x, a, b, δ) = (u[1], u[2], u[4], u[6])
             eta = eta0 * (1 + δ) - e * V / m_p / c^2
             ps_over_p0 = sqrt(eta * (2 + eta) / eta0 / (2 + eta0) - a^2 - b^2)
