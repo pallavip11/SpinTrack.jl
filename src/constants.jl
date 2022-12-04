@@ -27,7 +27,7 @@ end
     save_positions::Bool = false
 
     starting_time = 0.0
-    turns = 200.0
+    turns = 500.0
 
     saving_time_step = ring.total_length/10
     internal_max_time_step = ring.ringElements[element_index].length
