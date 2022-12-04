@@ -23,7 +23,7 @@ notebook()
 ```
 to launch the IJulia notebook in browser.
 
-ON the first time running the notebook(), there will be a prompt for whether to install Jupyter. Hit enter to have it use the Conda.jl package to install a minimal Python+Jupyter distribution (via Miniconda) that is private to Julia (not in your PATH).
+On the first time running the notebook, there will be a prompt for whether to install Jupyter. Hit enter to have it use the Conda.jl package to install a minimal Python+Jupyter distribution (via Miniconda) that is private to Julia (not in your PATH).
 For more details refer to this [link](https://julialang.github.io/IJulia.jl/stable/manual/running/).
 
 # Running Cases
@@ -42,7 +42,7 @@ plot(sol)
 ```
 NOTE: The semi-colon is used to supress output of the script. Use it according to your convenience.
 
-If the plotting backend Plots does not work, try using a different plotting [backend](https://docs.juliaplots.org/latest/backends/). 
+If the plotting backend `Plots` does not work, try using a different plotting [backend](https://docs.juliaplots.org/latest/backends/). 
 ## Variations
 
 - To run the simulation for a different time interval, change the value of 'turns' argument in ring parameters as such (default=500):
