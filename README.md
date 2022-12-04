@@ -23,11 +23,22 @@ m = FNAL_muon_ring()
 sol = get_solution(u1_long(1e-6), m);
 plot(sol)
 ```
+NOTE: The semi-colon is used to supress output of the script. Use it according to your convenience.
+
+If the plotting backend Plots does not work, try using a different plotting [backend] https://docs.juliaplots.org/latest/backends/ . 
 ## Variations
 
-- To run the simulation for a different time interval, change the value of 'turns' argument in ring parameters as such:
+- To run the simulation for a different time interval, change the value of 'turns' argument in ring parameters as such (default=500):
   ``` 
-  m = FNAL_muon_ring()
+  m = FNAL_muon_ring(turns = 200)
   sol = get_solution(u1_long(1e-6), m);
   plot(sol)
   ```  
+  This is because ending time is calculated as: no. of turns * length of the ring
+- To change other parameters in the code, clone the repository into your own github or make a copy of the code locally. To compile the local copy, use the   following command:
+  ``` 
+  Pkg.add(path="User/local_path/SpinTrack.jl")
+  ```  
+- To experiment with using different particles, explore this [file] src/particles.jl .
+- To experiment with different ring designs, explore the different designs in this [folder] src/ring_designs .
+
