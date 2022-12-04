@@ -10,7 +10,7 @@ Pkg.add(url="https://github.com/pallavip11/SpinTrack.jl")
 Pkg.add("Plots")
 
 ```
-#Running Cases
+# Running Cases
 
 To run the most basic example:
 
