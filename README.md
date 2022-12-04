@@ -1,6 +1,6 @@
 # Installation
 
-Please install the official Julia Binary from [here]https://julialang.org/downloads/. PLease download the Long-term support (LTS) release: v1.6.7 (July 19, 2022).
+Please install the official Julia Binary from [here](https://julialang.org/downloads/). PLease download the Long-term support (LTS) release: v1.6.7 (July 19, 2022).
 
 Now, open Julia REPL and input th following commands
 
@@ -25,7 +25,7 @@ plot(sol)
 ```
 NOTE: The semi-colon is used to supress output of the script. Use it according to your convenience.
 
-If the plotting backend Plots does not work, try using a different plotting [backend]https://docs.juliaplots.org/latest/backends/ . 
+If the plotting backend Plots does not work, try using a different plotting [backend](https://docs.juliaplots.org/latest/backends/). 
 ## Variations
 
 - To run the simulation for a different time interval, change the value of 'turns' argument in ring parameters as such (default=500):
@@ -39,6 +39,6 @@ If the plotting backend Plots does not work, try using a different plotting [bac
   ``` 
   Pkg.add(path="User/local_path/SpinTrack.jl")
   ```  
-- To experiment with using different particles, explore this [file]src/particles.jl .
-- To experiment with different ring designs, explore the different designs in this [folder]src/ring_designs .
+- To experiment with using different particles, explore this [file](src/particles.jl).
+- To experiment with different ring designs, explore the different designs in this [folder](src/ring_designs).
 
