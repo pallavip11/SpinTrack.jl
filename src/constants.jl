@@ -27,7 +27,7 @@ end
     save_positions::Bool = false
 
     starting_time = 0.0
-    turns = 500.0
+    turns = 200.0
 
     saving_time_step = ring.total_length/10
     internal_max_time_step = ring.ringElements[element_index].length
@@ -44,7 +44,7 @@ end
     RF_on::Bool = false
     RF_phase = 0.0
     cyclotron_freq = 1/(ring.total_length/particle.beta/c)
-    RF_omega = 2pi * cyclotron_freq * 80   # 30 times faster than
+    RF_omega = 2pi * cyclotron_freq * 80  
     RF_voltage = 1.89e3
 
     is_losing_energy::Bool = false
