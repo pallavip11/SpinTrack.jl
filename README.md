@@ -27,8 +27,7 @@ plot(sol)
 
 - To run the simulation for a different time interval, change the value of 'turns' argument in ring parameters as such:
   ``` 
-
-m = FNAL_muon_ring()
-sol = get_solution(u1_long(1e-6), m);
-plot(sol)
-```  
+  m = FNAL_muon_ring()
+  sol = get_solution(u1_long(1e-6), m);
+  plot(sol)
+  ```  
